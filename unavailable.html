@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Aklatech 3.0 Filipino 9</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="w3.css">
+
+<body>
+
+	<section>
+		<div class="banner-top" style="background-color: #f0f5f9; padding: 0px; justify-content: space-between;">
+			<div class="banner-logo" onclick="home()"><img src="./resources/ic_fluent_arrow_left_24_filled.svg"></div>
+			<div class="menu">
+				<div class="menu-info">
+					<img src="./resources/menu-02.svg">
+				</div>
+			</div>
+		</div>
+		
+		<main>
+			<div class="menuboard">
+					<div class="logo"><img src="./resources/Digital nomad-cuate.svg" style="width:100%"></div>
+				<div class="menu">
+					<div class="menu-info">
+					<div class="menu-title" style="text-align:center"><h2>Ooops!</h2></div>
+					<div class="menu-text" style="text-align:center">Kasalukuyang hindi available ang pahinang ito. Maraming salamat sa iyong pag-unawa.</div>
+				</div>
+			</div>
+		</main>
+
+		<main>
+				<div class="menu">
+				<div class="logo"><img src="./resources/app-icon.png" style="width:70px"></div>
+				<div class="menu-info">
+					<div class="menu-title">Aklatech 3.0 Filipino 9</div>
+					<div class="menu-text">Application version 
+						<script>
+							var verCode = Website2APK.getAppVersionName();
+							document.write(verCode)
+						</script>.<script>
+							var verCode = Website2APK.getAppVersionCode();
+							document.write(verCode)
+						</script></div>
+						<div class="menu-text">Tingnan ang updated version ng app</div>
+				</div>
+			</div>
+
+		</main>
+				
+	</section>					
+
+
+<script>
+function showtoast() {
+   	Website2APK.showAboutDialog("Hello There, It is a Custom Dialog","Title Text","OK");
+}
+
+function exitapp() {
+ 	Website2APK.exitApp();
+	}
+
+function unavailable() {
+	window.open("unavailable.html");
+}
+function home() {
+	window.open("dashboard.html");
+}
+
+
+</script>
+
+</body>
+</html>
